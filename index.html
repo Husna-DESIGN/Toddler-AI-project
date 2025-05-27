@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toddler Fun Learning</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Welcome Page -->
+    <section id="welcome-page" class="page active">
+      <h1>🌈 Welcome Little Star! 🌟</h1>
+      <p>Let's start a fun learning adventure!</p>
+      <button id="start-btn">Start Learning 🚀</button>
+    </section>
+
+    <!-- Dashboard Page -->
+    <section id="dashboard-page" class="page">
+      <h2>🎉 Hello, Little Learner!</h2>
+      <p>Choose what you'd like to explore:</p>
+
+      <div class="grid-menu">
+        <div class="menu-item" onclick="alert('Coming soon: Learn ABC!')">
+          <img src="img/abc.png" alt="ABC" />
+          <span>Learn ABC</span>
+        </div>
+        <div class="menu-item" onclick="alert('Coming soon: Animals!')">
+          <img src="img/animals.png" alt="Animals" />
+          <span>Animals</span>
+        </div>
+        <div class="menu-item" onclick="alert('Coming soon: Numbers!')">
+          <img src="img/numbers.png" alt="Numbers" />
+          <span>Numbers</span>
+        </div>
+        <div class="menu-item" onclick="alert('Coming soon: Colors & Shapes!')">
+          <img src="img/colors.png" alt="Colors" />
+          <span>Colors & Shapes</span>
+        </div>
+        <div class="menu-item" onclick="alert('Coming soon: Songs!')">
+          <img src="img/rhymes.png" alt="Songs" />
+          <span>Songs</span>
+        </div>
+        <div class="menu-item" onclick="alert('Coming soon: Stories!')">
+          <img src="img/stories.png" alt="Stories" />
+          <span>Stories</span>
+        </div>
+      </div>
+
+      <div id="voice-output"></div>
+
+      <!-- Chatbot (Always visible) -->
+      <div id="chatbot-box" class="chatbot-container">
+        <h2>TodChat - Ask Me Anything!</h2>
+        <input type="text" id="userInput" placeholder="Type your question here..." />
+        <div class="chatbot-buttons">
+          <button onclick="sendMessage()" class="chat-btn">Ask</button>
+          <button onclick="startVoiceInput()" class="chat-btn">🎤 Speak</button>
+        </div>
+        <div id="response"></div>
+        <div class="chatbot-buttons">
+          <button onclick="startReading()" class="chat-btn">🔊 Start Reading</button>
+          <button onclick="stopReading()" class="chat-btn">⏹ Stop Reading</button>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
