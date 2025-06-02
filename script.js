@@ -22,7 +22,7 @@ async function sendMessage() {
     const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: {
-        Authorization: 'Bearer YOUR API KEY',
+        Authorization: 'Bearer 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',
         'HTTP-Referer': 'https://www.todchat.com',
         'X-Title': 'TodChat',
         'Content-Type': 'application/json',
